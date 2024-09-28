@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Eslint Template",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "lib": ["ES2022"],
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "baseUrl": "src",
+    "strictNullChecks": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["node_modules", "jest.config.js"],
+  "include": ["global.d.ts", "src/types/types.d.ts", "src/**/*", "index.ts"],
+  "ts-node": {
+    "esm": true
+  },
+  "eslint.options": {
+    "experimentalDecorators": true
+  }
+}
